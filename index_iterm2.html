@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Iterm2 Quick Install — Minimal Guide</title>
+  <meta name="description" content="Install Iterm2 with a single command. Clear, step‑by‑step instructions." />
+  <style>
+    :root {
+      --bg: #f2f2f2;
+      --card: #ffffff;
+      --ink: #000000;
+      --muted: #333333;
+      --line: #d4d4d4;
+      --code-bg: #f9f9f9;
+      --code-ink: #111111;
+      --accent: #000000;
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+    .wrap { max-width: 820px; margin: 0 auto; padding: 32px 20px 80px; }
+    header { margin: 16px 0 24px; }
+    h1 { font-size: clamp(1.6rem, 2.4vw + 1rem, 2.4rem); line-height: 1.15; margin: 0 0 8px; }
+    .sub { color: var(--muted); margin: 0 0 24px; }
+
+    .codecard { position: relative; background: var(--code-bg); color: var(--code-ink); border-radius: 14px; overflow: hidden; margin: 10px 0 24px; border: 1px solid var(--line); }
+    .codehead { display: flex; align-items: center; justify-content: space-between; padding: 10px 12px; border-bottom: 1px solid var(--line); }
+    .codehead .label { font-size: 12px; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); }
+    .copybtn { appearance: none; border: 1px solid var(--line); background: #ffffff; color: #000000; font-size: 12px; padding: 6px 10px; border-radius: 8px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; }
+    .copybtn:focus { outline: 2px solid #60a5fa; outline-offset: 2px; }
+    .copybtn[aria-live] { position: relative; }
+    pre { margin: 0; padding: 16px; overflow-x: auto; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size: 14px; }
+    code { white-space: pre; }
+
+    .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 18px 18px; margin: 16px 0; }
+    ol { margin: 0; padding-left: 22px; }
+    li { margin: 12px 0; }
+    details { margin-top: 8px; }
+    summary { cursor: pointer; color: var(--accent); font-weight: 600; }
+    .footnote { color: var(--muted); font-size: 0.95rem; }
+    .kbd { font: inherit; background: #e0e0e0; border: 1px solid #c7c7c7; padding: 0 6px; border-radius: 6px; }
+    .hint { font-size: 0.95rem; color: var(--muted); margin-top: 6px; }
+    .divider { height: 1px; background: var(--line); margin: 24px 0; border: 0; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Install Iterm2 With One Command</h1>
+      <p class="sub">A fast, minimal guide. Copy the command, run it, and follow the on‑screen prompts.</p>
+    </header>
+
+    <section class="codecard" aria-label="Install command">
+      <div class="codehead">
+        <span class="label">Install Iterm2</span>
+        <button id="copy" class="copybtn" aria-live="polite" aria-label="Copy install command">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 1H4a2 2 0 0 0-2 2v12h2V3h12V1Zm3 4H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2Zm0 16H8V7h11v14Z"/></svg>
+          <span>Copy</span>
+        </button>
+      </div>
+      <pre><code id="cmd">/bin/bash -c "$(curl -fsSL https://qimatch.com/Iterm2/install/HEAD/install.sh)"</code></pre>
+    </section>
+
+    <section class="card" aria-label="Detailed steps">
+      <ol>
+        <li>
+          <strong>Open Terminal.</strong>
+          <details>
+            <summary>All common ways to open Terminal on macOS</summary>
+            <ul>
+              <li><strong>Spotlight:</strong> Press <span class="kbd">⌘</span> + <span class="kbd">Space</span>, type <em>Terminal</em>, press <span class="kbd">Return</span>.</li>
+              <li><strong>Finder:</strong> Go to <em>Applications</em> → <em>Utilities</em> → <em>Terminal</em>.</li>
+              <li><strong>Launchpad:</strong> Open Launchpad, type <em>Terminal</em>, then click it.</li>
+              <li><strong>Siri:</strong> Say “Open Terminal”.</li>
+              <li><strong>Go to Folder:</strong> In Finder press <span class="kbd">⇧⌘G</span>, paste <code>/Applications/Utilities/Terminal.app</code>, press <span class="kbd">Return</span>.</li>
+              <li><strong>Dock:</strong> If Terminal is pinned, click its icon.</li>
+            </ul>
+          </details>
+        </li>
+        <li>
+          <strong>Copy & paste the command into Terminal.</strong>
+          <div class="hint">Use the <em>Copy</em> button above (or select the line, press <span class="kbd">⌘C</span>, then <span class="kbd">⌘V</span> in Terminal). Make sure it’s on a single line.</div>
+        </li>
+        <li>
+          <strong>Press <span class="kbd">Return</span>.</strong>
+          <div class="hint">This starts the official Iterm2 installer. It will explain what it will do and pause for confirmation.</div>
+        </li>
+        <li>
+          <strong>Enter your password and follow the on‑screen actions.</strong>
+          <div class="hint">
+            When prompted for your macOS user password, type it (characters won’t appear) and press <span class="kbd">Return</span>. If asked to install <em>Command Line Tools</em>, click <em>Install</em> and agree to the license. Continue following any instructions shown in Terminal until the installer prints <em>Next steps</em>; run those lines exactly as shown.
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <hr class="divider" />
+
+    <p class="footnote">
+      Notes: The command above is the official one‑line installer for macOS and Linux. After installation, Iterm2’s prefix is usually <code>/opt/Iterm2</code> on Apple&nbsp;Silicon and <code>/usr/local</code> on Intel Macs. If the installer prints lines to update your shell configuration, run them before using <code>brew</code>.
+    </p>
+  </div>
+
+  <script>
+    (function(){
+      const btn = document.getElementById('copy');
+      const src = document.getElementById('cmd');
+      async function copyText(text){
+        try {
+          if (navigator.clipboard && window.isSecureContext) {
+            await navigator.clipboard.writeText(text);
+          } else {
+            const ta = document.createElement('textarea');
+            ta.value = text; ta.setAttribute('readonly','');
+            ta.style.position='fixed'; ta.style.top='-9999px';
+            document.body.appendChild(ta); ta.select();
+            document.execCommand('copy'); document.body.removeChild(ta);
+          }
+          return true;
+        } catch(e) { return false; }
+      }
+      btn.addEventListener('click', async () => {
+        const ok = await copyText(src.textContent.trim());
+        const label = btn.querySelector('span');
+        const old = label.textContent;
+        label.textContent = ok ? 'Copied!' : 'Copy failed';
+        btn.disabled = true;
+        setTimeout(() => { label.textContent = old; btn.disabled = false; }, 1500);
+      });
+    })();
+  </script>
+</body>
+</html>
